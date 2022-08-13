@@ -7,6 +7,7 @@
 
 module.exports = {
   transformer: {
+    // eslint-disable-next-line @typescript-eslint/require-await
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: false,
