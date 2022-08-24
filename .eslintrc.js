@@ -34,7 +34,12 @@ module.exports = {
         // ===================================
         'no-shadow': 'off',
         'no-undef': 'off',
+        'arrow-body-style': 0,
 
+        // import
+        'import/no-named-as-default': 0,
+        'import/export': 0,
+        'import/prefer-default-export': 0,
         // ===================================
         // react
         // ===================================
@@ -51,6 +56,7 @@ module.exports = {
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
           },
         ],
+        'react/jsx-props-no-spreading': 0,
 
         'prettier/prettier': 2,
         // ===================================

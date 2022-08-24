@@ -1,10 +1,24 @@
 // prettier-ignore
 {
-  "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
+  "extends": "@tsconfig/react-native/tsconfig.json", /* Recommended React Native TSConfig base */
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
-
     /* Completeness */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+    "skipLibCheck": true, /* Skip type checking all .d.ts files. */
+    // Path alias config
+    "baseUrl": ".",
+    "paths": {
+      // This needs to be mirrored in babel.config.js
+      // Components is a directory with sub directories
+      "core/*": [
+        "src/core/*"
+      ],
+      // We want to expose the exports of the buttons index file
+      "components/*": [
+        "src/core/components/*"
+      ],
+      "src/*": ["src/*"],
+    }
+  },
+  "exclude": ["node_modules"]
 }
