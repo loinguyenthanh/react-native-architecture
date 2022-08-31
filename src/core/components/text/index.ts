@@ -1,3 +1,3 @@
-import CoreText from './CoreText';
+import CoreText from './CoreText'
 
-export { CoreText };
+export { CoreText }

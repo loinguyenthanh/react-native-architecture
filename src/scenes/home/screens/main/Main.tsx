@@ -1,13 +1,13 @@
-import React, { PropsWithChildren } from 'react';
+import React, { PropsWithChildren } from 'react'
 import {
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
   View,
-} from 'react-native';
-import { CoreText } from 'core/components';
-import { TYPOGRAPHY } from 'core/foundation';
+} from 'react-native'
+import { CoreText } from 'core/components'
+import { TYPOGRAPHY } from 'core/foundation'
 
 const styles = StyleSheet.create({
   sectionContainer: {
@@ -26,18 +26,18 @@ const styles = StyleSheet.create({
   highlight: {
     ...TYPOGRAPHY.h1,
   },
-});
+})
 
 const Section: React.FC<
   PropsWithChildren<{
-    title: string;
+    title: string
   }>
 > = ({ children, title }) => (
   <View style={styles.sectionContainer}>
     <CoreText style={[styles.sectionTitle]}>{title}</CoreText>
     <CoreText style={[styles.sectionDescription]}>{children}</CoreText>
   </View>
-);
+)
 
 const Main: React.FC = () => {
   return (
@@ -46,14 +46,14 @@ const Main: React.FC = () => {
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View>
           <Section title="Step One">
-            <CoreText bg-gold pink>
+            <CoreText bg-pink gold h2>
               Hello World
             </CoreText>
           </Section>
         </View>
       </ScrollView>
     </SafeAreaView>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

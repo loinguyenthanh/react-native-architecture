@@ -1,24 +1,24 @@
-import React, { useEffect } from 'react';
-import Orientation from 'react-native-orientation-locker';
+import React, { useEffect } from 'react'
+import Orientation from 'react-native-orientation-locker'
 
-import { initFoundationConfig } from './core/foundation';
+import { initFoundationConfig } from './core/foundation'
 
-import { Main } from './scenes/home';
+import { Main } from './scenes/home'
 
-initFoundationConfig();
+initFoundationConfig()
 
 const App: React.FC = () => {
   useEffect(() => {
     const lockPortraitScreen = () => {
       if (Orientation) {
-        Orientation.lockToPortrait();
+        Orientation.lockToPortrait()
       }
-    };
+    }
 
-    lockPortraitScreen();
-  }, []);
+    lockPortraitScreen()
+  }, [])
 
-  return <Main />;
-};
+  return <Main />
+}
 
-export default App;
+export default App
