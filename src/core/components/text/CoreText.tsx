@@ -1,7 +1,9 @@
 import React from 'react';
 import { Text, TextProps } from 'react-native-ui-lib';
 
-type Props = TextProps;
+import { BgProps, TypographyProps } from 'core/foundation';
+
+type Props = TextProps & BgProps & TypographyProps;
 
 const CoreText: React.FC<Props> = props => {
   return <Text {...props} />;
