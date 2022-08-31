@@ -28,6 +28,7 @@ module.exports = {
         // ===================================
         '@typescript-eslint/no-shadow': ['error'],
         '@typescript-eslint/no-unused-vars': 2,
+        '@typescript-eslint/no-unsafe-call': 2,
 
         // ===================================
         // common

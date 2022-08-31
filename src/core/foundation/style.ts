@@ -4,6 +4,6 @@ export const COLORS = {
 };
 
 export const TYPOGRAPHY = {
-  h1: { fontSize: 58, fontWeight: '300', lineHeight: 80 },
-  h2: { fontSize: 46, fontWeight: '300', lineHeight: 64 },
+  h1: { fontSize: 58, lineHeight: 80 },
+  h2: { fontSize: 46, lineHeight: 64 },
 };
