@@ -4,6 +4,7 @@ import Orientation from 'react-native-orientation-locker'
 import { initFoundationConfig } from './core/foundation'
 
 import { Main } from './scenes/home'
+import { ModalGlobal } from './managers/ModalGlobal'
 
 initFoundationConfig()
 
@@ -18,7 +19,12 @@ const App: React.FC = () => {
     lockPortraitScreen()
   }, [])
 
-  return <Main />
+  return (
+    <>
+      <ModalGlobal />
+      <Main />
+    </>
+  )
 }
 
 export default App

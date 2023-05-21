@@ -7,7 +7,6 @@ import {
   View,
 } from 'react-native'
 import { CoreText } from 'core/components'
-import { TYPOGRAPHY } from 'core/foundation'
 
 const styles = StyleSheet.create({
   sectionContainer: {
@@ -22,9 +21,6 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
-  },
-  highlight: {
-    ...TYPOGRAPHY.h1,
   },
 })
 

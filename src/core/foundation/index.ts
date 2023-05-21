@@ -6,5 +6,7 @@ export const initFoundationConfig = () => {
   Typography.loadTypographies(TYPOGRAPHY)
 }
 
+const foundation = { COLORS, TYPOGRAPHY }
+
 export * from './type'
-export { COLORS, TYPOGRAPHY }
+export default foundation
